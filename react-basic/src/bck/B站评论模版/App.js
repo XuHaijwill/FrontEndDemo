@@ -33,7 +33,8 @@ function useGetList () {
     // 请求数据
     async function getList () {
       // axios请求数据
-      const res = await axios.get(' http://localhost:3004/list')
+      // const res = await axios.get(' http://localhost:3004/list')
+      const res = await axios.get('_db.json')
       setCommentList(res.data)
     }
     getList()
